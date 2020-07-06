@@ -1,0 +1,190 @@
+generally if we want to work on any project , defenitly there wil be some set of dependecnies available.
+
+take an example of selenium in java
+
+1.java software
+2.selenium
+3.json
+4.excel
+5.database
+6.allure-reports
+
+where ever i want to exxecute my project i should ensure that, these dependencies available on the system.
+
+so i can not go and download these dependencies every time on my target system all the time.
+
+so i need a person who can do all this installation every rtime before i execute my scripts on any machine.
+
+not only installation but also ineed a successfull build also without any errors.
+
+
+the person we called here is "Maven"
+
+maven is called a build automation tool
+
+
+maven have a file called "POM.xml"
+
+POM stands -- project object model
+
+this file is called as heart of the project
+
+this file is the address for all the dependecnies that are required on the project.
+
+one should not try to change the name of POM.xml
+
+
+How maven works really?
+
+before you start understanding of maven understand about repositories
+
+
+* Central level repository
+* External Repository
+* Remote level
+
+
+who ever the actual developer of any thing, selenium there is some developer available, for excel and json there will some developer available, they are responsible to create jarfile to access the contenet of it
+
+they will deploy into a common repository called as central repository of maven
+every one in this market can access tehm without paying 
+
+
+External Repository:
+ there are some project , where your developers had developed soem jars only to your project, these jars are not accessible by the external market
+
+Remote Repositories:
+
+
+my cleint is very strict, they wont have trsut on our infra sytructure
+
+they have their own repository where each jar is scanned and tested by the expert team in the company.
+
+they have their own artifact manager like nexus, jfog or nuget
+
+we should access them via secured atrtifact manager
+
+
+
+maven have a file called POM.xml
+
+
+this file have two major components
+
+<dependendencies>
+	// add dependencies required to your project
+</dependendencies>
+
+
+<build>
+
+
+</build>
+
+
+to exeute the project as maven project, build is necessary
+
+this build should have plugin tags
+
+	* Complier
+	* Surefire plugin
+
+compiler helps to execute the project as a maven project
+
+surefire plugin is repsonsible to trigger the execution, to track the resulst to disply the progress
+
+The dependencies are avialble in different types
+
+* Central level 
+* local
+* external
+* snapshot
+* exclusion
+* remote level
+
+
+when we execute the project as a maven project the maven compiler will scan the dependencies tags as a first task
+
+it will check all the dependecies and its type
+
+
+then immediatly it will go the local resposoirory of the maven and checks if this depency is available in the local or not
+
+
+today i developed a version 1.o with some set of features
+pradeep identifies few issues and i fixed them and again i released 2nd version 1.1
+
+
+
+
+
+My project is depend ABC project
+
+ABC is depend on XYZ
+
+XYZ ==edf
+
+so when project is availavle on other dependecies we no need to mention all the types .
+
+just write the dependecnies that you rae looking for
+
+
+
+
+currenty iam using version 1.0, my dependent project is working 0.1
+now maven will be confused which version should i need to take
+
+1.0 or 0.1
+
+either exclude your version or exclude the dependent version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
