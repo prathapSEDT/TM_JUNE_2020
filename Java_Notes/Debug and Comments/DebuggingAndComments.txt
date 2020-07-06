@@ -1,0 +1,79 @@
+Why debugging is required?
+
+debugging is the process of analysing the code execution in run time
+
+it helps the use to see what are the values that were holding by the variable in runtime
+
+when ever there doubt on the logic written by you or someonne
+
+or
+
+if the code is not executing as expected 
+
+now we need to look the flow and a fix is required to do that we use debugging process.
+
+for every QA and dev debugging skills must be very accurate.
+
+
+how to start doing debugging?
+
+intiation process:
+*************************
+1.identify the area from where you need to do degug
+2.insert a break point 
+3.run the code in debug mode
+
+to analyze the code
+************************
+
+in debugging we have 3 steps in hand
+
+	* stepinto
+	* stepover
+	* stepout
+
+stepover:
+
+to analyze line by line code or to skip any method execution , we use step over/
+
+while analyzing any code step by step if you come across any method in between, you dont want to check the logic available inside the method , you just want to skip the method debugging, we use step over.
+
+when we skip a method, it means that the logic inside the method got executed  but we adint performed debugging on the logic
+
+
+
+stepinto:
+
+if we need to analyze the code available inside a method , we use stepinto
+
+
+stepout:
+
+while doing my execution , i accidently went into the method, i feel that debugging this method will not yield me any results, so iwish to comeout from the method
+we stepout
+
+
+How can we make code better for readable?
+
+use comments
+
+comments are ignored by the JVM while executing or design time
+
+there are two type of comments
+
+	* single line comment =====>>> //-single line comments
+	* multiline comments
+
+	/*
+
+	**======****
+
+	*/
+
+
+when you write any logic, or any conditiona statement or math logic etc... just write onleine comments on top of it. it will help the reviewer why you wrote the code , where are you getting this value
+
+
+for every method ensure that we are wriiting method headers by using multiplene comments
+
+

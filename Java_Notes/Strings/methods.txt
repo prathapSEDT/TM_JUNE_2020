@@ -1,0 +1,276 @@
+String are called as immutable
+
+once you create a string the content can not be changed.
+
+Strings are always represented in double quotes
+
+anything that we write in b/n double quotes we treat it as a string.
+
+it includes numbers, special characters and also while spaces.
+
+String is a combination of words
+
+word is a combination of characters
+
+even space is a character.
+
+
+in java String can be represented in different ways.
+
+
+1. String str="Hello i am learning java";
+
+2. String str= new String("Hello i am learning java");
+
+3.String Buffer
+
+4.String Builder
+
+can i assign a string with null type?
+
+yes
+
+
+
+These strings are associated with some set of methods which helps the user to manipulate the content.
+
+1.length()
+
+this method will get the total length of a source string that includes special chars, numbers and also white spaces.
+
+syntax:
+string or string varaiable.length()
+
+input:string
+output:int
+
+
+2.charAt()
+
+this method will get the charcteer from the user given index position.
+
+by default all the characters in a string will store at respective index
+
+index will start from 0
+
+syntax:
+string or string varaiable.charAt(index position)
+
+input:int
+output:char
+
+3.substring() ==== *******
+
+this method will get the sequence charcteer from the user given position.
+
+position will be having a strting and ending
+
+starting position will always be a index
+ending position will always be a length
+
+index will start from 0
+length will start from 1
+
+syntax:
+string or string varaiable.subString(start,length)
+
+input:string with positions
+output:string
+
+Note:
+
+in this method 2 argument is always optional.
+
+if i dont specify the second argument, then the compiler will crop the string from the starting position to end of the string
+
+
+Use substring and print character by charcter on the sourceString
+
+
+
+Task 1:
+
+String : 
+
+AB75DE65
+
+7565_ABDE
+
+75*65---AB_DE
+
+
+Task 2:
+
+message="My Transaction id 7845"
+
+print only the number from the string
+
+
+Task 3: 
+AB75DE65
+
+1.check if the sum of all numbers is odd or even
+2.Check if the sum of all numbers is prime
+3.check if the sum of all number is divisible by 5
+4.print if there are any repeated characters includes both alphabets and numeric in the string
+
+
+
+
+Contains:
+
+this method will check if the user given word is available in the source string or not.
+
+syntax:
+string or string variable.contains("some word")
+
+input:string
+output:boolean
+
+String.valueOf()
+
+this syntax is used to convert any thig into string format.
+
+input: any
+output:string
+
+
+integer-string
+double-string
+
+if we want to validate any error message, if we want to check wheter teh word error is available or not
+
+
+toUppercase() and toLowercase():
+
+to convert the words in to lower case or uppercase
+
+input:string
+output:string
+
+
+indexOf():
+
+This method is used to get the index position of the user given word on the source string
+
+if there are multiple matches available, this method will take only the first occurance
+
+ex: india is great country , great in population, great in economy
+
+
+the position that this method return, it will will be the index of the first character in found match
+
+when the match is found , the output will be equal to 0 or greater than 0
+
+when no match found then the output will <0
+
+syntax:
+
+String or string variable.indexOf()
+
+input:string
+output:int
+
+
+trim():
+this method is used to remove spaces in starting and ending of the given source string
+
+syntax:
+string or string variable.trim()
+
+input:string
+output:string
+
+// when you get the string data to validate , first apply the trim method to remove unwanted spaces
+
+
+lastindexof()
+this method will work as same as indexOf method , but this method will identify the last occurance of the user given word
+
+
+replace()
+this method is used to find some value given by the user and repalce with other value given by the user.
+
+input:string 
+output: string
+
+note:
+ 	
+
+
+starts-with():
+
+this method will check if the user given string is starting with the specific word or not
+
+input:string
+output:boolean
+
+equals() equalsIgnoreCase() contentEquals()
+
+equals is a method which is used to compare two string
+while comparing any two string , java will consider the cases of each character available in the source string
+
+equalIgnorecase():
+
+we want to compare two strings but need to ignore the cases of each char on the source string
+
+ex: str1=india, str2="India"
+
+it will ignore the cases and it will start compare the values
+
+contentEquals():
+this method is same as equals.
+
+
+
+String Buffer()
+
+it is a special class available for the strings , for the purpose of mutability.
+
+when ever we want to modify the content of the string, this class will go directly to the main memory address where the content is available, then it will modify on the source string.
+
+it wont create new refference.
+
+you no need to create a vraible to store the changes of the source string
+
+thread safety is higher in string buffer
+
+it is syncronus
+
+
+String builder () is the same which works as buffer.
+
+it is rich in performance
+but no thread safety
+it assync
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

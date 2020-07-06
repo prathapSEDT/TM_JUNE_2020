@@ -1,0 +1,45 @@
+Problem Statement:
+
+Raj want to buy a product from amazon from electrocins and need to complete the payement
+
+1.open browser
+2.launch the application
+3.login into the system
+4.navigate to electromics
+5.search and add the product
+6.go to cart
+7.payment
+
+Raj want to buy a product from amazon from shoes and need to complete the payement
+
+1.open browser
+2.launch the application
+3.login into the system
+4.navigate to shoes
+5.search and add the product
+6.go to cart
+7.payment
+
+
+
+Raj want to buy  products from amazon from shoes and apparels  and need to complete the payement
+
+
+1.open browser
+2.launch the application
+3.login into the system
+4.navigate to shoes
+5.search and add the product
+6.navigate to apparels
+7.search and add the product
+8.go to cart
+9.payment
+
+Task:
+Step1:
+Create a class file with the name called "Application Librarry"
+
+Keep all the reusable methods inside it
+
+Step2:
+Craete 3 classes and name them as "Tc-01","Tc_02","Tc_03"

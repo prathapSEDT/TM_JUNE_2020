@@ -1,0 +1,53 @@
+Constructor is called as blockof code which triggers as soon as when an object is created.
+
+by deafult there will be a zero argument based constructor available for the class in the background
+
+the constructor will looks same as method, but the name of the constructor must be always as a classname.
+
+constructor can not return a value
+
+why constructor is needed?
+
+By default constructor will instialize all the class level variables.
+
+if the class level variables are declared but no intialized such scenrio, constructor will assign the default values based on the datatype provided.
+if we want tp run any logic during the object creation paralley then we use constructor in the place.
+
+it act like a place holder , where user can pass the data to the class.
+
+
+Can the user create his own zero argument constructor?
+Yes, when we try to create our own zero argument constructor then the default constructor available in the background will be removed.
+
+syntax:
+
+className(){
+
+
+}
+
+
+this constru tor will behave differently when we have oops in place.
+
+how many constructor can have in a class?
+
+we have have as many as you have, but the arguments should not match
+this is called as constructor overloading
+
+samename , but with different arguments
+
+
+
+Can i use this keyword inside a constructor to represent the class level variables?
+
+Yes you can, even the members are static in nature.
+
+can i call a constructor from another constructor?
+
+yes, you can call by using a method called this()
+
+using this() we need send appropriate arguments
+
+note: while calling a constructor from athor constructor, calling statement must be always the first statement
+
+from a constructor we can call only one constructor one at a time

@@ -1,0 +1,151 @@
+Datatype is the one which make the user to understand what type of data are we going to store inside a variable
+
+based on the datatype , size will be allocated in the main used memeory.
+
+this datatypes are classified into two types
+
+1.Primitive datatypes
+boolean--- true/false
+byte
+char--- single char===''
+short
+int----- number======  -2147.....<<--->>2147.....
+long--- numbers==== 64 bit==== -2pow(63) to +2 pow(63)
+float--- decimals
+double--- decimals
+
+
+
+
+
+2.Non primitive datatypes
+
+Boolean
+Character
+Integer
+String
+Long
+Double
+Flaot
+
+
+
+
+
+
+
+primitive datatypes are the one which are predefined by the programming language
+the size and the type of variables values are specified  and there are no additional method available on top of it in order to manipulate
+
+Nonprimitive datatypes:
+
+String,Intefaces,Classes
+
+On primitive datatypes , must be always starts with capital letter
+
+these dattypes are not acutaully defined by the programming languag but they are created by the programmer(user or developer)
+
+
+Problem statement:
+
+Raj want to add two numbers in the program, but he may need to use the same logic in different places, can you suggest how can he write the logic in 10 different places.
+
+
+
+When we write the logic in the program, ensure that we are not doing code duplication.
+
+to avoid code duplication and to bring code reusability, we need to understand methods.
+
+methods are called as block of code where user will write business logic inside it for the purpose of reusability
+
+when ever it is required we call that particular method.
+
+
+before understanding the methods underastand , where we should write the code and how shoud we write the code in java?
+
+typically in java we have 2 major areas
+
+	* static area
+	* instance area
+
+these two areas are tightly bounded with set of rules
+
+
+
+the two words static and instance are used for the purpose of memory mamngement
+
+all the static members will get memory by the class , when ever a class is loaded, all the static members will get memory.
+
+all the instance members,object will allocate memory. 
+
+
+when we speak about methods, there two types of methods
+
+* static methods
+* instance method
+
+for all static memebers there is a keyword called static.
+
+for all instance memebers we wont hve any keyword
+
+how to create a method?
+
+syntax:
+
+access specifier static /instance returntype methodname(){
+
+}
+
+public static void add(){
+//logic
+}
+
+public static void mul(){
+}
+
+public static void sub(){
+}
+
+
+when ever we want to call the logic of a method we need to call the method by its name
+
+How to create an object??
+
+ClassName somerefvariable=new ClassName();
+
+here the object is called" new ClassName()";
+
+
+in java where ever you found the keyword new, it means that we are creating an object .
+
+object will allocate memeory for all instance types
+
+class will allocate mememory for only static type
+
+
+using object we can access all the properties of a class either static or instance
+
+but to access static members, try access by using classname
+
+
+
+create a class have 5 different method with print statements inside it and name class as "Utilities"
+
+
+now create another class and name as TestUtilities
+now in the TestUtilities class have, a main method
+
+form this main method call the utility methods.
+
+
+
+
+
+
+
+
+
+
+
+
+

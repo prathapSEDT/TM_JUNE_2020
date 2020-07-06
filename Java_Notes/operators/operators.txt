@@ -1,0 +1,51 @@
+Java operators:
+
+operators are used to perform some operation on variable values
+
+arthimetic operators
+assignment operators
+comparision operator
+logical operators
+
+
+using these operator we write the logical conditional statements in java
+
+
+
+Arthematic Operators:
+it is used yo perform math operations in the business logic
+
++,-,*,/,%,++,--
+
+Assignment Operators: "="
+
+=, x=5;
++=
+
+x+=3======>> x=x+3
+
+
+Comparision Operator:
+
+== (compare two values)
+!= not equal
+> greater
+< less
+>=
+<=
+
+Logical OPerators:
+
+&& === to check multiple condition
+
+a>b && b<c 
+
+|| or to check either or 
+
+a>b || b<c 
+
+! not
+
+
+
+

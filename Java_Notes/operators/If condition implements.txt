@@ -1,0 +1,15 @@
+how do you know if the login is sucessfull or not
+
+so in the method i need to define a boolean value and that method should return a boolean value
+
+based on this output , will take a decision and we will print status as pass or fail
+
+
+public static boolean login(String userName, String passWord){
+
+// enter credentials
+// check if username and pasword matched
+
+// if matches return true else return false
+
+}

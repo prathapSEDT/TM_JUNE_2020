@@ -1,0 +1,119 @@
+How to write the method as reusable method?
+
+When ever we write any logic , we should think  does this method gives the output with different inputs.
+
+it mean that , the inputvalue or the input data should not be hardcoded.
+
+the inputvalue or the data must be always dynamic in nature.
+
+when we build a method amd the logic requires input data , never try to hard code it
+
+for example:
+
+
+i want to add two numbers
+
+logic: 
+
+int a, b, c;
+
+a=20;
+b=30;
+c=a+b;
+
+
+here if we observe the data is 20 and 30 as input values
+logic sum of aand b
+
+here my logic will always remain same, but the input data memebers will alsways get changed.
+
+
+
+How to send the input values to the methods?
+
+Sending input values to the method are called as argumnents
+
+Accepting the input values by the method is called as "Parameters"
+
+syntax:
+
+
+accessspecifiers static/instance returnType  methodname(datatype param,datatype param....){
+
+//logic 
+
+}
+
+Note:
+Total number of params must be equal to total number of araguments with same type
+
+
+Methodname+Params is called as "Signature"
+
+
+Can i assign a method to variable?
+
+Returntype:
+
+When we want to return some data from the method as an output to the use we use the keyword called return.
+
+Note:
+
+in the method definition we must need to specify the datatype of teh return data
+
+for ex: the sum of two numbers is int
+
+so i want to return the output of two numbers which is a int.
+
+so my return type also must be int
+
+
+
+syntax with return type:
+
+
+accessspecifier static/instance  returntype / void methodName(param...){
+
+
+return someoutput
+}
+
+
+Note:
+
+after a return statement user is not allowed to write any kind of logic or statements.
+Return indicated , is the closure of a method
+if we try to write any logic we get an exception called "Unreachable code"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

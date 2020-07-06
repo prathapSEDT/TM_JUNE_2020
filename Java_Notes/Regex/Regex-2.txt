@@ -1,0 +1,33 @@
+How to identify the special characters in the string with regex?
+
+\special character
+
+How to include spaces in regex?
+
+\s
+
+ex:
+
+Ex:
+abc.xyz@tcs.com
+pradeep.xyz@tcs.com
+
+
+Identify any number of characters in the word except new new line== *
+Identify any number of characters in the word including new new line=== .*
+
+how to write not condition in regex===[^ pattern]
+
+To get only numerics ---- \d
+
+To get only alphabets ---\D
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+How to start writting the code in java?
+
+Before that understand few terms in java s/w
+
+
+* JDK
+* JRE
+* Compiller
+
+
+JDK/JRE:
+
+JDK---java development kit
+
+this jdk helps the user to develop the code as well as to execute the code
+
+
+JRE is called as Java Run Time Environment, it helps only to execute the program but not developement
+
+
+Compiler:
+
+java is a server side programming language, which is used to develop complex application
+
+To execute these programs, we need a person, so called compiler
+
+in java the compiler is JVM----Java Virtual Machine
+
+This JVM will come along with s/w installation
+
+we can view this JVM
+
+JVM is a self programmed s/w
+
+it have set of rules and regulation that need to be follow while developing the code.
+
+when ever  we write any code , JVM will get invoked and it will scan the code then and there and will understand the syntax is correct or not , are you follwing the rules of java or not.
+
+java is purely a rule based programming language
+
+
+How to start writting the code in java?
+
+Java always force the user to write the  code in aplaceholder called "ClassFile"
+
+How to create a classfile?
+
+Go to project folder
+Go to SRC
+create a package
+create a classfile
+
+
+while creating a class file ensure that , we always give the name of the classfile in capital letter as starting , and proceed with the camel case
+
+AnnnnB
+
+What is the structure of a class?
+
+syntax:
+
+class SomeName{
+
+//write the  logics
+
+
+}
+
+for a java class there 5 major components available
+
+* variables
+* methods
+* constructors
+* static block
+* instance block
+
+variables:
+
+variables are called as memory holders.
+
+when ever we want to store any data in java , we use variables 
+
+but this variables have some set of rules.
+
+
+1.open phone
+2.click on dial pad
+3.enter number
+4.click on save
+5.enter the name
+
+**********************************
+
+1.open phone
+2.click on dial pad
+3.type the name
+4.get the names with the matching information---- number with names
+
+
+in java if we want to store any data , i need to specify the datatype
+then the appropriate size will allocated such that user can store data inside a variable
+
+if we want to see teh value of a varaible we want to call by the name of the varaible, such that the value will be printed
+
+
+how to create a variables?
+
+syntax:
+
+datatype someVariableName;// declaration
+
+in java every statement should end with a semicolon
+
+
+when you declare a variable a empty block will be created
+
+
+inserting data into a memory block is called as intialization
+
+it is process of assigning value into a memory block
+ by using an operator called "=", we call "=" as assignment operator
+
+how to assign a value to variable?
+
+varaiable name=somevalue;
+
+
+////////////////////////////////////////
+
+datatype somevariableName;//dec
+somevariableName=somevalue//intiali
+
+
+to see the output in java we use  a statemnt called as System.Out.Println(somevariableName)
+
+
+Note:
+
+To execute your code in java, we must have a main method
+
+syntax:
+
+public static void main(String[] args){
+
+//write the logic
+
+}
+
+
+Datatypes:
+
+Datatype specifies what type of data is being stored inside a variable
+
+there are different types of data available
+
+* number
+* text
+* true/false
+* decimals
+* date and time etc
+
+
+for each type there is a dedicated datatypes
+
+this datatypes are divided into two types
+
+	* primitive datatypes
+	* non-primitive datatypes
+
+
+number---- int
+text------ String
+true/false--- boolean
+decimal--- float
+large number--- long
+bigger decimal---- double
+single char--- char
+byte 
+short
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

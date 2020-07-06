@@ -1,0 +1,26 @@
+Looping statements:
+
+for 
+while 
+do while
+for each loop
+
+what is meant by looping statement?
+
+why looping stateents are used ?
+
+how to implement looping statements in realtime?
+
+
+1.create different method that return the values ased o your test case steps:
+
+1.launch browser
+2.enter url===== get url method
+3.enter username and password ==== get username and password
+4.click element ---- inside this method write a switch case
+
+case link
+link is clicked sucsessfully
+case button
+
+case text

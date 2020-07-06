@@ -1,0 +1,71 @@
+if else:
+
+when your simple if condition is false , and if we want to print or execute some other logic we use else block
+
+syntax:
+
+if (some condition){
+//write your logic
+}else{
+// write some other logic to get execute when the simple if is false
+}
+
+else if:
+
+when your simple if is failed or false and if you want to check any other alternative condition , inn such scenarios we use if else
+
+ex:
+
+as an user i pass a number , based on a number input  you must print the day 
+
+
+conditions:
+
+1.check if the number is ranged in b/n 1-7
+2.if step 1 is true then check the user given input value accordingly print the output
+3.if step1 is false, print "invalid input"
+
+
+Switch case:
+
+this switch case is an alternative of else if conditions.
+
+in switch case, only if the match is found , the matched logic will get executed.
+
+if no match is found no logic is executed.
+
+
+switch case will do comparision based on the key value.
+
+
+syntax:
+
+switch(key)
+{
+
+case "matching input value either string or int" :
+
+	//logic;
+	break;
+case "matching input value either string or int" :
+
+	//logic;
+	break;
+case "matching input value either string or int" :
+
+	//logic;
+	break;
+
+default:
+//this block will get executed when there is no match found on the above listed cases
+
+
+}
+
+note:
+
+break is keyword which is mandatory
+
+if we skip the break keyword, the next case will get executed automatically
+
+

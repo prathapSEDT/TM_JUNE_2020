@@ -1,0 +1,104 @@
+Arrays:
+
+Arrays are introduced to overcome the problem in the variables
+
+Problem in variables is , user can store max of one value under a variable name
+
+to store multiple values,under a single variable arrays are introduced.
+
+Arrays are called as Homgenius by default in nature.
+
+How arrays will work?
+
+array will store multiple values in the memeory block assign spave for each value.
+
+each value will have an index mapped.
+
+index will always starts from 0
+
+
+suppose i want to store all the employee names
+
+my variable name will be employee_names
+
+
+while creating my array to store employee details , i need to tell the compiler saying that the count of employees.
+
+i need to store 5 employees.
+
+it means that array is depend on size
+once u define the size, the block will be created in the main memeory
+
+here user should remain the following things:
+
+1.syntax:
+
+Datatype[] somevaraiblename=new Datatype[size]// array declaration
+
+when we declared an array with size , memery blocks will be created in the main memeory
+
+2.add elements to the array
+
+in the array to add the elements we must specify the index.
+
+syntax:
+arrayvariable[index]=value
+
+Note:
+1.you can able to add only the datatype that is matcing while you declared in craeting an array.
+2.Keep an eye on the index that you are specifying.
+
+say my array size 8, index=7, now if try to insert the value at index 8......no wil get an exception saying that index outof bound 
+
+3.Arrays values can be retrived by specifying the index only
+4.once you declared the size , u cant change the size in run time. as arrays are fixed in size
+5.to retive the values from an array , we can retrive based on index only.
+6.arrays are iteratable , there is a special loop statememt available called as "for each"
+7.arrays can be iterate over any looping statements like for,while,do while loop, for each loop
+
+
+for each loop:
+
+syntax:
+
+for(Datatype variable:iteratble object){
+
+//use variable name
+
+}
+
+
+this for each will pick up each element available in the array.
+it will iterate each item that is available on the given array
+
+***************************************************************************************
+
+To convert the array to hetrogenius, we can use the class called "object"
+
+in java for all classes the parent class is called as Object class.
+
+this class will provide Object array
+
+remember that arrays fall under non primitive
+
+user created class will also comes under non primitive category only.
+eve the class you created, will also have an array------**** Try and let me know if this line worked ******
+
+synatx:
+
+Object[] someVariableName=new Object[size]
+
+Task: 
+1.Create an array with the duplicate elements and find how many duplicates are available
+2.Craete two arrays and check if the array 1 is subset of arary2
+3.Create an integer array with 6 elements and check what is highest value and lowest value
+
+
+
+
+
+
+
+
+
+

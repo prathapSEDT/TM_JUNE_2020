@@ -1,0 +1,71 @@
+how to return a value from a definition?
+when we write a logic inside a method, the user might expect the outputfrom it, to give back the value from the definition we use return keyword inside the method.
+
+when the emethod is returning a value , we can assign them to a variable.
+
+in otherword, the value to the variable can a definition also
+
+if the method is not returning any value , then the output will be given as "None"
+
+
+conditional statements:
+
+conditional statements are used to alter the flow of execution based on some condition
+
+in python we have conditional statements like
+
+	* if
+	* if else
+	* el if
+
+
+if : this is called as simple if statement
+
+this statement will check only for true statement
+if the conditionn is true then only the body will get executed
+
+syntax:
+
+if somecondition:
+
+	//logic
+
+
+looping statements:
+
+looping statements are used to iterate same set of statements for a specific number of time
+
+in python we have looping statements like
+
+	for 
+	while
+
+this for loop can be used in different ways
+	* with range fucntion 
+	* with iteratble object
+
+
+while loop:
+
+while loop is also used to itearte a value
+
+while loop is a condition based loop
+
+while will check for a true statement, if it is true then only the body gets executed
+
+user must need to write a failing condition to exit out from the loop.
+
+if there is no failing statement avaialble, the loop wil run as indefinite loop
+
+
+* print even and odd numbers in first 100 numbers
+* print prime numbers in between 1 to 100
+* print fibonical series
+* check if the given number is divisible by 5 or not
+*
+=
+==
+===
+====
+=====
+

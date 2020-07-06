@@ -1,0 +1,30 @@
+What are types of variables?
+
+* Global (static/instance)
+* local
+
+variables which are defined at the class level but not inside the method
+
+define?----declare
+
+global level variables will be in live through out the execution and hence forth we can use at any place
+
+
+local variables:
+
+variables which are defined at the method level is called as local variables
+the life time or scope of the variable will be within the method itself
+we can not access them out side the method
+
+Note:
+
+when the global and the local variables having the same name, the compiler will take priority on local variables only
+
+method params are also called as local variables
+
+
+To take the values of global variables by the compiler when we have both global variables and local variables with the same name so to differentiate b/n global and local we use the keyword called "this"
+
+this represents current class variables and methods.
+
+inside the static methods we can not use this keyword

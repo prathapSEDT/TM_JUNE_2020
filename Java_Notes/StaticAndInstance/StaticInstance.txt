@@ -1,0 +1,45 @@
+static block:
+
+in java there is a dedicated block called as static block
+this block will be executed as soon as a class is loaded.
+all the static memebers in the class will get memory by the class.
+
+syntax:
+
+static{
+//logic here
+}
+
+this block will get executed when ever the class is loaded.
+
+How to load a class?
+
+class.forName("packagename.classname")
+
+
+when you write this syntax, you may get an exception that , the class you are trying into load may not be available.
+
+
+the static block will called only once, if we retry to load the class, the block will get called only once.
+
+what can i write inside my static block?
+
+connecting to database
+loading the json testdata
+creating test results. etc..
+
+
+
+Insstance block:
+
+representation is {}
+
+this bloack will be executed when an object is created
+
+
+Note: static block execute onlyonce
+
+instance will execute, as many time you create an object
+
+
+when there is a constructor and instance block available, 1st instrance block will get executed and then only constructor will get executed.

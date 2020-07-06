@@ -1,0 +1,25 @@
+Naming Conventions:
+
+1.variable name should be related to the business process that you are working on.
+
+x ,y what x is ? what y is?
+
+login modules------ username, password
+
+2.never try to give a space in between the variable names
+
+username==== user name
+
+3.in java variable names are case sensitive
+
+a=10
+A=20
+
+both are different
+
+4.Variable can store max of one value one at a time
+that too the most recent value
+
+5.variables can not redeclared with the same name
+7.variable name can not start with numericbut we can have numeric at any place
+8.if we want to separate the variables , use "_", no other special character is allowed

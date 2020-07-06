@@ -1,0 +1,33 @@
+Conditional Statements:
+
+Conditional statements are used to alter the flow of execution based upon some user conditions
+
+condition will be given a boolean values 
+
+conditions use operators not at all the time
+
+conditional statements will always check for the boolean value
+
+by default the conditional statemnts will check for true 
+
+java supports the following conditional statements
+
+	* simple if
+	* if else
+	* else if
+	* switch case
+	* neste if( try to avoid)
+
+simple if:
+
+syntax:
+
+if (condition) {
+
+// business logic
+}
+
+
+simple if will check if the condition is trur or false, if true then the body will get executed else body will not get executed
+
+

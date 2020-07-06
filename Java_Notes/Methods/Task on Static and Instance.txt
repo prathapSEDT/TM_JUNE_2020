@@ -1,0 +1,24 @@
+Problem statement:
+
+Raj need to add the student details to the database, unfortunately raj doesnt have a DB to store the data.
+
+His logic should be in mode of generating teh student id in a sequential way.
+
+He is allowed to send the student details like
+
+	* Name
+	* Place
+	* standard
+
+Your logic should help him to generate the ID, remember you are not suppose tos end the id, logic should generate the ID  and it must be sequential.
+
+
+new Student();
+
+
+if the members are static, the memory will be given by the class which is called as main memeory
+
+the old data will still persit
+
+
+for the instance members, object will allocate memeory, when ever we c reate an object a new memory allocation will be happen, old value will not persist

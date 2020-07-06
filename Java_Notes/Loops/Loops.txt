@@ -1,0 +1,127 @@
+Looping statements:
+
+looping statements are used to iterate same statement for a specific number of times.
+
+looping statements are also used for the purpose of parameterization.
+
+parametrization is the process of replacing the variable value in run time.
+
+
+
+java supports the following looping statements:
+
+1.for loop
+
+this loop is called as definite loop
+
+this loop will have a starting point and aswell as a ending point
+
+syntax:
+
+for( int somevariable=startingpointvalue;condition( how many time doe your loop to get execute); increment value for the variable)
+{
+
+
+//logic
+
+}
+
+
+for (int i=1;i<=20;i++){
+//logic here
+}
+
+
+parametrization:
+
+print a 2 table using for loop:
+
+
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6 
+
+
+
+static==== 2*, = 
+
+// use for loop and print the number between 1-50
+
+without using any looping statments can you print numbers from 1-50
+
+// complete it as a task
+
+hint: create a method and pass the value which indicates that how manytime does method should execute
+
+you can use max of one  if condition
+
+
+
+for each loop:
+
+for each loop is used to iterate the collection objects or iteratable objects
+
+syntax:
+
+for( datatype somevariable:collectionObject){
+
+//print logic
+
+}
+
+while loop:
+
+while loop is called as a indefinite loop
+while loop will check condition as an entry criteria
+only if the condition is true the body will get executed
+user must define the failing statement to exist out of theloop, if there is no failing statement, the body will never get terminated.such case will make the loop to execute as indefinite loop
+
+indefinite loops will leads into system crash error resulting memory out of flow
+
+
+syntax:
+
+while(somecondition){
+//statements
+}
+
+print numbers from 1-50
+
+
+Do-While Loop:
+
+do while loop will not check for any condition on entry
+atleast once , the code will get executed without checking any condition.
+
+once all the statements is completed for the firsttime, it will start checking teh condition.
+
+
+syntax:
+
+do
+{
+
+
+
+}while(condition);
+
+
+
+explain about break and continue?
+
+
+to exit out of the loop we use break keyword
+after break keyword we are not suppose to write any statement.
+
+
+continue:
+
+to skip any iteration and move on to the next iteration, then use continue keyword.
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+I have a string which contain my pannumber ,bank account number, date of birth and email etc.
+
+
+now i need to validate the format of my pannumber,bank account number and dateof birth.
+
+the string looks like
+
+"Pan Number : KLIPO9600E  Bank A/C :SDFG7895-9087-BC DOB: 09/08/1990"
+
+now i need to validate the format:
+
+ex in pan card -- 5 alphabets in caps and 4 mumeric and 1 alpha in caps
+
+so i can do this using my string methods, but its too much cost in design and execution.
+
+to over come that problem we use regular expression
+
+
+In Regex whole string will not get parsed by char by char.
+user must define a pattern, if the pattern is available then only the data retrival will happen.
+
+no matter how much dynamic the content is available, once you define the pattern, it have capacity to identify the content in the string.
+
+
+how to write a pattern in regex?
+
+1.character set
+[]
+[A-Z][0-9][a-z]===and representation
+
+[A-Za-z0-9]=== or represnation when we have combination is a word
+Ert
+Abbbb
+nnnAAA
+
+when the given data is dynamic in nature , we should not hard code the data, rather we must use characterset which may available in the given range
+
+
+ex: my pan number is DGHJK8520E
+
+
+To represent groups in regex==={size}
+
+
+
+
