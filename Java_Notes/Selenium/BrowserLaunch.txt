@@ -1,0 +1,28 @@
+Selenium is a web automation tool which works on anytype of browsers like chrome,ff,ie,edge
+
+selenium doesnt have direct interaction with the live browsers
+
+live browsers-- browsers which are installed on the machine
+
+
+Note:
+if i want to make selenium to interact with any browser, i should install them prior to my execution.
+
+selenium takes the help of browser drivers all the time to invoke them.
+
+but here there is a chalenge that will arise all the time for a qa and it is called as maintaince proces.
+
+what is the problem?
+
+we dont know when the browser will get upfdated, when ever a browser updated we must have updated driver in hand.
+
+QA needs to checks every time if there is a updated browser available or not which is maintaince task.
+
+
+suppose if we are runnung the testcases in nightmode , due browser compatability the testcases got failed. so we lost a valuable run over the night
+
+
+to avoid such issue, DriverManager is introduced.
+
+Drivermanger it itself will check latest driver for the browser and it will invoke the right browser
+

@@ -1,0 +1,9 @@
+Problem:
+
+Raj want to open any type of browser, because his test case demands every a time a new browser type
+in one test case he may use chrome
+in another test case he may use ff
+
+in onne test case half of the scenario in chrome and half of the scenario in ff, he may get any type requirement based upon the testcase.
+
+now can u suggest the best way to write the code in selenium, it should not be a duplicate code and more over he should be able to open any kind of application on the fly

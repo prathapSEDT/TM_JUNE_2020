@@ -1,0 +1,92 @@
+How to identify the webelements on the webpage?
+
+WebElements are the elements developed by using HTML
+
+CSS are used for the purpose of styling on the webpage
+
+when the webdeveloper develop the application , he will will giving some properties to each element he/she developed.
+
+these properties are called as attributes also.
+
+using these attributes, in selenium there are 8 types of locators available
+
+* id
+* name
+* xpath --- *****
+* css --- ****
+* tag name
+* classname
+* linktext
+* partial linktext
+
+
+in HTML there are two types of tags available
+
+* paired html tags
+* unpaired html tags
+
+paired html tag: tags which have open and close tags we call it as paired html tags
+
+for ex:
+
+<a>.....</a>
+<li>....</li>
+
+unpaired html tags:
+
+tag with only opening but no closing
+
+<input />
+<img />
+<br />
+
+
+learn what are the webcontrol available and what is their html tags available
+
+1.button
+
+opertion: click
+validation: elememnt exist,enable, disable, check the name of the button
+html tag: unpaired
+
+<input type="button" value="buttonname"/>
+
+<input----- html tag
+type---- attribute or property
+
+2.link
+
+opeartion: click
+validation: elememnt exist,check for link name, visited or non vistied, broken or not
+html tag: paired
+
+<a href="url">Register</a>
+
+register is called as "InnerHTML" or "innerText"
+
+when teh tag is <a>, in selenium we can identify the link by its innertext using the locator called "link text"
+
+3.radio
+operation: click
+validation: elememnt exist,enable or disable, one option should selected, default select or not
+
+htmltag: unpaired
+
+<input type="radio">
+
+
+4.textbox
+operation: click,clear,enterdata
+validation: elememnt exist,readonly,maxlength,get the value from the text
+
+htmltag: unpaired
+
+<input type="text">
+
+
+
+
+
+
+
+
