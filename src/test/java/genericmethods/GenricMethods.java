@@ -1,15 +1,27 @@
 package genericmethods;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
 
 public class GenricMethods {
     public static WebDriver driver;
-    public void launchBrowser(String browserType,String url){
 
+    /**
+     * @Method name: launchBrowser
+     * @param browserType,url
+     * @Purpose: This method will launch the browser gievn by the user
+     * @Return Type: NA
+     */
+
+    public void launchBrowser(String browserType,String url){
+        //convert the user gievn input to Uppercase
         switch (browserType.toUpperCase()){
 
             case "CHROME":
@@ -36,6 +48,60 @@ public class GenricMethods {
         driver.get(url);
         // maximize the driver window
         driver.manage().window().maximize();
+
+    }
+
+    /**
+     * @method name:selectDropDownByVisibleText
+     * @purpose:This method will select the dropdown with the visible text given by the user
+     * @param element
+     * @param option
+     */
+    public void selectDropDownByVisibleText(WebElement element, String option){
+        Select dropDownOption=new Select(element);
+        dropDownOption.selectByVisibleText(option);
+    }
+
+
+    /**
+     * @method name:selectDropDownByValue
+     * @purpose:This method will select the dropdown with the value given by the user
+     * @param element
+     * @param option
+     */
+    public void selectDropDownByValue(WebElement element, String option){
+        Select dropDownOption=new Select(element);
+        dropDownOption.selectByValue(option);
+    }
+
+    /**
+     * @method name:selectDropDownByIndex
+     * @purpose:This method will select the dropdown with the index position given by the user
+     * @param element
+     * @param indexoption
+     */
+    public void selectDropDownByIndex(WebElement element, int indexoption){
+        Select dropDownOption=new Select(element);
+        dropDownOption.selectByIndex(indexoption);
+
+    }
+
+    public boolean checkIfTheDropDownSelected(WebElement element,String valueToCompare){
+
+        boolean selected=false;
+        Select dropDownOption=new Select(element);
+        String dropDownValue=dropDownOption.getFirstSelectedOption().getText();
+        // check if the dropdown option is not --select--. or length is 0 or string is empty
+
+        if(!(dropDownValue.equalsIgnoreCase(valueToCompare) || dropDownValue.length()==0 || dropDownValue.isEmpty())){
+            System.out.println("Drop Down is selected");
+            selected=true;
+        }
+        else {
+            System.out.println("Drop Down is not select with any option");
+        }
+        return selected;
+
 
     }
 

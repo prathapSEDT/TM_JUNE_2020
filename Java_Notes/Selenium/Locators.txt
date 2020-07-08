@@ -85,6 +85,73 @@ htmltag: unpaired
 
 
 
+5.checkboxbox
+operation: click
+validation: elememnt exist,check or uncheck
+
+htmltag: unpaired
+
+<input type="checkbox">
+
+
+
+
+6.dropdown or select list
+operation: select or deselect an option under the dropdown
+validation: elememnt exist,dropdown is selected or not
+
+htmltag: paired
+
+<select>
+
+	<option value="">option 1</option>
+	<option value="">option 1</option>
+
+</select>
+
+in selenium to handle this dropdown, first we need to check wheter the html tag is select or not
+
+if it is select as a htmltag, then we should use the class Select class.
+
+steps to select a dropdown value :
+
+1.Identify the slect tag for which element you want to select an option, store it a variable of type WebElement
+
+Here you can call WebElement as a datatype or a class
+
+Ex: WebElement dateOfBirth=driver.findElement(By.anylocator(""));
+
+
+2.To select any value from a dropdown, we can use multiple ways
+
+(a): select the option using a method called selectByVisibleText
+(b): select option by using a method called selectByValue("give option attribute called value here")
+
+(c): select option by using index ranking
+
+by default the first optiontag will have index value as 0
+
+select dropdown option by using selectByIndex(number)
+
+
+
+How do i know wheter radiobutton and check box is selected?
+
+There is a method available called as "isSelected"
+
+this method can be applied only on radiobutton and checkboxes
+
+this method will return true or false values
+
+true when selected
+
+false when the element is not selected
+
+
+
+
+
+
 
 
 
