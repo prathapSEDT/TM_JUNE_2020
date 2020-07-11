@@ -1,0 +1,118 @@
+Xpath:
+
+How to identify the elements using xpath?
+
+xpath is used to identify the elements on the DOM structire of the HTML page
+
+DOM is called as Document Object Model.
+
+DOM is used to visualize the pysical structure of the elemenyt on the webpage.
+
+to start seeing the physical structure of an element we need do inspection of the html page.
+
+in this xpath we should know the basic structure of the HTML page
+
+
+<HTML>
+
+	<head>
+
+		<title>....<title>
+	</head>
+
+<body>
+
+	// webelements
+
+</body>
+
+
+</HTML>
+
+
+Here HTML is called as Root element.
+
+Earlier days to identi any element on the DOM structure, people will take the refferece of the root elememt in order to identify an element
+
+
+
+/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a
+
+it is difficult to track the element
+Time consuming process
+poor in performance as it takes more time to identify an element on the page.
+
+
+writting xpath in this fasjion is a bad pratice.
+
+now to over come this xpath which is called as absolute xpath, is replaced with "Relative xpath"
+
+
+so xpath is catorized in two ways
+
+	* Absolute xpath(not a good way to identify)
+	* Relative xpath(preffereable)
+
+
+what is meant by relative xpath?
+
+in the relative xpath we will try to identify exactly what element you want to work with.
+in this relative xpath, we use the properties of the element given by the developer
+
+properties are called as attributes.
+
+syntax of writing simple relative xpath is:
+
+//----- it indicates the xpath is relative xpath
+
+//htmltag[@attribute,'value']
+
+attributes might be 
+
+id,name,class,or anything that waht a developer had given at the time of development
+
+these attributes might be dynamic natutre.
+
+once you identifuied an element ensure that , the properties that you used to identify an element is statiic
+
+
+how can i know wheter the properties are dynamic or not?
+
+execute the script every time launching a new browser instance.
+if the script fail, check the property what it is having in the curent state, what is the property that is available while you design.
+
+see what is changing, and we make moddification accordingly.
+
+when ever we write an xpath it should be always a strong xpath.
+
+To handle the dynamic properties of the element we have different types of relative xpath 
+
+1.Function based xpath, all the function are java script based function
+2.farwrd xpath--- identify the elements using the relationship
+3.bacward xpath ---identify the elements using the relationship
+4.logical xpath
+
+all the above listed types will depend on the simple syantax of relative xpath only.
+
+to write any type of relative xpath first we should knnow teh basic writting of the reative xpath.
+
+
+HTML Tag:
+<input type="text" data-val="true" data-val-required="First name is required." id="FirstName" name="FirstName">
+
+
+<input---- htmltag
+
+all other after the html tag is called as attributes or properties.
+
+
+when there is an id, without any numerics in place and you dont have any unreadble text, use the id property.
+
+id is used to identify aan element more uniquely.
+
+//htmltag[@attribute='value']
+
+//input[@id='FirstName']
+
+
+

@@ -147,6 +147,13 @@ true when selected
 
 false when the element is not selected
 
+Syntax:
+
+WebElement.isSelected()
+
+
+How can i know wheter a dropdown is selected or not?
+
 
 
 
