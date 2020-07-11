@@ -115,4 +115,83 @@ id is used to identify aan element more uniquely.
 //input[@id='FirstName']
 
 
+i dont have aproperty to identify an element on the page.in such cases there are multiple ways to write a xpath for those elements.
+
+1.check the html tag, if the html tag is <a> use the function based xpath 
+
+what are the function based xpath available
+
+1.text()
+syntax:
+
+//htmltag[text()='text or innertext or inner HTML']
+
+we all know that , <a> is called as "paired html tag"
+
+<a>INNER TEXT</a>
+
+inner text is called as text
+
+
+when the inner text have special charcter , this method will not work
+Ex:Today's Deals
+
+2.Normalize-space---80% dont know
+some times, when we identify an element using text, we may get the inner text with spaces at starting and at ending
+
+based on the browser types these space will get differ, you may have or you may not have or you may more spaces in place
+
+when you identify an elemet with the text method ensure you dont have a space for the innertext
+
+//htmltag[normalize-space(text())='text without spaces']
+
+
+3.()----group
+
+when we identify any element using xpath, if you get more element when you identify.
+use group to get your element.
+
+suppose for my xpath i got 15 elements
+my element is at 10th place, use group and identifify the element
+
+syntax
+(elementxpath)[number]
+
+
+4.last() 
+this method must use inside the [], to get everytime last element
+
+5.starts-with()
+
+when the attribue values are constant only at the starting position and rest of them are getting cahnged in runtime then use this method called as starts-with
+
+//htmltag[starts-with(@attribute,'value')]
+//htmltag[starts-with(text(),'value']
+ex:
+
+when i identify an element my id is looking like below
+
+id=ABC1256
+ABC745689
+ABC124589
+ABC_POPLI
+
+
+if we observer correctly the starting position ABC alone is constant and rest of the property is getting canged.
+
+i ll use startswith to identify my element, but here there are chances to get one or more elements
+
+
+if the html tag is paired html tag with inner text
+ex: Welcome Admin
+Welcome User
+Welcome Prathap
+
+only welcome is constant, rest is dynamic in nature.
+
+
+
+
+
+
 
