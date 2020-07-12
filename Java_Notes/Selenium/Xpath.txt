@@ -189,6 +189,109 @@ Welcome Prathap
 
 only welcome is constant, rest is dynamic in nature.
 
+6.Contains():
+
+this method is used to identify the elements, when some part of attribute value is constanst and the other parts is dynamic in nature
+
+for example:
+
+when i logged into the system there is a text available on the top right corner of my system as "Welcome Prathap"
+
+so when prathap logged in---"Welcome Prathap"
+
+when as Admiun Logged in the text is Available as "You Logged into the system as Admin, Welcome user"
+
+if you observe the message are different part the word welcome is constant
+
+when i want toodentify the text , that is available in the welcome place holder, we can hardcode a static value.
+
+syntax:
+
+//htmltag[contains(@attribute,'value')]
+//htmltag[contains(text(),'text')]
+
+
+Farward xpath and backward xpath:identify the elements with their relation ship
+
+1.ancestor
+2.parent
+3.child
+4.siblings--- following-sibling,preceding-sibling
+5.descendants
+
+
+<div class="date-picker-wrapper">
+	<select name="DateOfBirthDay">
+		<option value="0">Day</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+</div>
+
+where should i use these xpath with realtionship
+
+1.so when there are no attributes available
+2.attributes are always dynamic in nature
+
+so how to start writting these relationxpath
+
+Tip:
+
+when your element is not having any attribute or all attributes are dynamic in nature
+1.look for the very nearest element having static inertext or any static property
+2.keep the step 1 as reference and see what is the relationship we have for the element you are looking for
+
+
+
+following-sibling:
+
+syntax: [static element identification]/following-sibling::htmltag
+
+instead of htmltag we can aso keep *
+when we use * all the elements that are available will get captured
+if you use html tag only specific element types will get identigied.
+
+when you do this xpath you may get multiple elements to get identified, use group and find the desired element
+
+
+parent:
+
+syntax: [static element identification]/parent::htmltag
+
+
+preceding-sibling:
+syntax:[static element identification]/preceding-sibling::htmltag
+
+
+ancestor:
+syntax:[static element identification]/ancestor:htmltag
+
+child:
+syntax:[static element identification]/child:htmltag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
