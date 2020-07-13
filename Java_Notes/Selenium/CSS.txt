@@ -1,0 +1,87 @@
+indentify the elements using css:
+
+css is called as cascading style sheets.
+
+CSS is used to apply style on the application .
+
+CSS is also depend on the element attributes.
+
+
+How to write CSS selector to identify an element?
+
+when you have an ID to an element: use # to represent id
+
+syntax: # id
+
+
+the other way of writting css using attribute, the syntax
+xpath://htmltag[@attribute='value']
+css:htmltag[attribute='value']
+
+when the element attributes are dynamic in nature css also have few method notatted syantxes as how we have in xpath.
+
+1.starts-with====>>> ^
+
+syntax:htmltag[attribute^='value']
+
+
+2.contains===== >>>  *
+syntax:htmltag[attribute*='value']
+
+3.Ends-with==== >> $
+syntax:htmltag[attribute$='value']
+
+note : in xpath we dont have ends-with
+
+
+
+How to tranverse from a refference element?
+
+to traverse farward in xpath we use "/", where as in css we use ">"
+
+
+Hw can i select a particular element in css when i have multiple elements in serach, ex: how do i gropup in xpath?
+
+
+:nth-child(1)
+
+
+To get the first ekement in css selector:
+:first-child
+
+To get the last element:
+:last-child
+
+
+How to get all the following-siblings in css selector?
+
+use "~"
+steps:
+1. identify the element what is required, 
+2. apply the symbol "~" after the selection with html tag
+
+you will get all the following siblings for the selection you made
+
+
+
+How can i get the adjacent element or sibling in css?
+
+use the symbol "+"
+
+can i select any element with their text using css selector?
+
+No, in css we can not select the element based on their text proerty as how we select in xpath
+
+
+
+when we compare CSS and Xpath, CSS is more powerfull in performance
+
+CSS less options in identfying element
+Xpath have more options
+
+when the element is more dynamic in nature then i preffer to xpath, else i choose css.
+
+
+
+
+

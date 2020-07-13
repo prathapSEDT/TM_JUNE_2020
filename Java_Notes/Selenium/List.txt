@@ -1,0 +1,69 @@
+Inn java there is concept called collections
+
+in collection we have different types
+
+1.List
+2.Set
+3.Queue
+
+
+**** Map
+
+
+Queue is not a mandatory for the QA to implement, tehy use in Dev process.
+
+why collection are important?
+
+as we have disadvantages in array, we moved towards collections
+
+arrays does not supposrt to have resizing
+array will not allow to insert new elements in runtime at any specific psotion
+array wil not allow to delete an element
+
+
+to over come all these problem collections are introduced.
+
+List:
+
+List is an interface
+List methods are implemented in a class called "ArrayList"
+in the list all the elements are stored in the indexing manner
+index will start from 0
+list allows the user to have a null value
+list allows the user to have duplicate value
+list will allows the user to do manipulation like insert or delete
+list have its own iterator and also list can be itearte over a loop
+list is a type safety
+
+if you declared the with some datattype, it will stor ethe element only with that particular type only
+
+syntax to create a list:
+
+List<any class name or datatype>  someref=new ArrayList<any class name or datatype>
+
+here if we wont specify the class name then it will be consider as "Genericc: type
+
+generic type mean user can add a type values
+
+
+methods:
+
+add()
+get(index)
+iterator
+size()
+add(int index, object)
+remove(object)
+remove(index)
+contains()
+
+user can also add a new list to the existing list by using a method called addAll()
+user can check if one list type is avalaibale in another list called containsAll()
+
+
+to clear all the objects in the list we use a method called as clear()
+
+
+explore the difference between list and arraylist
+explore stream on collection object
+difference btn failSafe and failFast
