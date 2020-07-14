@@ -1,0 +1,18 @@
+Get All childs under a parent?
+
+Take any one dropdown and check if all the options are sorted or not?
+
+hint:
+use Collection.sort(list)
+search guava jar and use a method Strictlysorted
+
+Check if the link is bronken or not?
+
+steps
+1: Get all the links either by xpath or by tag name
+2: get the href attribute for the url from each link
+3. send HTTP request for each url
+4. verify the response code
+5. vlaidate if it is broken or not
+
+

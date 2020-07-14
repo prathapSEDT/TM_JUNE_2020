@@ -1,0 +1,7 @@
+to check the css properties of an webelement , use getCSSValue("Property")
+
+CSS Properties like
+
+	* color
+	* font-weight
+	* font-family etc

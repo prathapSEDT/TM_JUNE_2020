@@ -1,0 +1,18 @@
+How to handle Ajax controls?
+
+Ajax controls are very common controls that we face in regular application testing.
+ajax is the one of the functionality available in the application developement
+rather than loading whole page on the application, load only a particular section or div alone.
+
+for ex: when you try to search something in the search box, automatically you may come across some search results, now we need test that the search results are accurate?
+
+Ram want to search something in yahoosearch page, when he start searching automatically there are few search results getting displayed
+
+now he need to search wheter the result what he got is styarting with the input he has given
+
+ex:
+
+input as python
+
+all results must starts with python only.
+

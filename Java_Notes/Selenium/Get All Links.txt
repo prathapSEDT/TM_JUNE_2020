@@ -1,0 +1,50 @@
+How can we implement collection object list in selenium?
+
+
+we all know that list is used to store collection objects either with same type or different also it allows the duplicates.
+
+
+in our testing process some time we may need to do the following operations:
+
+	1. collect all the links and check if they are broken or not
+	2. collect all the elements that are available under a parent
+	3. print only the visible link or button etc in the application
+
+
+where ever there is scope of getting multiple elements we uyse list in place to handle the scenrio automation
+
+in sleenium to store mulytiple element using list we use the following syntax
+
+syntax:
+
+List<WebElement> refvar=driver.findElements(By.locator);
+
+
+now here we can store mutiple elements in alsit of type WebElement
+
+
+to get all the links from the page i can use either xpath or i can use locator by.tag
+
+
+
+can we check and print only the visible links on the page?
+
+yes we should iterate the collection object and get each link
+when you get each link , use a method called isDisplayed
+
+isDisplayed is the method which is used to check if the element is exist or not
+
+to get the text from a paired html tag, the method name is getText()
+
+here the link is a paired htmltag, so we can apply gettext method on the link object
+
+
+How isDisplayed method will work?
+
+The element should be display on the front end aswell as in DOM, if the elment is not perfroming the both you will get an exception
+
+to overcome this execption we need to surround with try and catch block
+
+
+
+
