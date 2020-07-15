@@ -1,0 +1,35 @@
+set is a interface which is implemented in hashset
+
+set will not allow duplicates
+
+set will not have indexing , so you cant retrive the details from the set using index position
+
+the position of values will be random
+
+
+syntax:
+
+Set<Type> refvar=new HashSet<Type>;
+
+
+Where will use Set in selenium?
+
+where we try to automate child browsers on the application we use Set interface
+
+Child browsers or any browser that we automate will have a window associated with it
+
+each window will have a id mapped to it
+
+some time, when we open a browser, we might get soem child browsers getting opened along with the parent browser.
+
+user may need to switch to any window and pperform operations
+user may need to close the child window
+
+either or the operation, we need to handl the windows
+
+in order to handle the windows in selenium we have two methods
+
+	* getWindowHandle()----- will get the parent window ID in string format
+	* getWindowHadles()---- will get the ID of all opened browsers id including parent window in a set
+because windows ID should not be a duplicate
+

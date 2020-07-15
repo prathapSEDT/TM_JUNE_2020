@@ -5,8 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -27,7 +29,15 @@ public class GenricMethods {
             case "CHROME":
                 //logic for chrome
                 WebDriverManager.chromedriver().setup();
-                driver=new ChromeDriver();
+                ChromeOptions options  = new ChromeOptions();
+                //options.addArguments("incognito");
+                options.addArguments("--disable-popup-blocking");
+
+                DesiredCapabilities capabilities = new DesiredCapabilities();
+
+                capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+
+                driver=new ChromeDriver(capabilities);
                 break;
             case "FF":
                 //logic for FF
@@ -43,6 +53,7 @@ public class GenricMethods {
             default:
                 System.out.println("Invalid browser");
         }
+
 
         //launch the application
         driver.get(url);

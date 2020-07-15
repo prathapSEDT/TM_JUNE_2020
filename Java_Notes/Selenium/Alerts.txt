@@ -1,0 +1,18 @@
+How to handle javaScript Alerts in Selenium?
+
+switchTO().Alert()
+
+
+there is an interface available called Alert
+this interafce helps the user to handle js alerts that raises on the browser.
+
+syntax:
+Alert alert=driver.SwitchTo().alert()
+
+
+there are two methods available
+	* accept
+	* dismiss
+
+accept mean it will click on ok button
+dismiss means it will cick on the cancel button.
