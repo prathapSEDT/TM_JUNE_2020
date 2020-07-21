@@ -11,7 +11,12 @@ public class WebTables {
         GenricMethods genricMethods=new GenricMethods();
 
         genricMethods.launchBrowser("chrome","https://money.rediff.com/gainers/bse/daily/groupa?src=gain_lose");
-        Thread.sleep(3000);
+
+        WebElement table=GenricMethods.driver.findElement(By.xpath("//th[text()='Company']/ancestor::table"));
+
+        genricMethods.waitForElementVisible(table,10);
+
+
 
         String rowXpath="//th[text()='Company']/ancestor::table/tbody//tr";
 

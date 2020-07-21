@@ -9,7 +9,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 
 public class GenricMethods {
@@ -115,7 +120,15 @@ public class GenricMethods {
 
 
     }
-
+public void waitForElementVisible(WebElement element, int seconds)
+{
+    //get the xpath from the webElement
+    System.out.println(element);
+    String xpath=element.toString();
+    xpath=xpath.substring(xpath.lastIndexOf(" ")+1,xpath.length()-1);
+    WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+}
 
 
 }

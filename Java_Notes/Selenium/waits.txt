@@ -1,0 +1,37 @@
+Synchronization:
+
+Generally when we try to open an application and perform automation on the opened application , there might be the following things happened
+
+1.app will take long time to load, but the selenium script will try to jump on to the next statement, hence forth the script get failed.
+
+2.we performed some action on the screnn, but we need to wait till some element or a text need to get displayed on the screen, but selenium will not wait for a element and it will jump on to the next statement
+
+the behaviour here is as there is no sync b/n selenium script and the app, so we need adjust the sync bn these two.
+
+implicit wait
+explicit wait
+
+
+implicit wait:
+the overall max time taken by the webdriver to identify an element on the screen is called as implicit wait.
+
+once you allocate max time for the webdriver , this wait time will be applicable on all the elements to identify
+
+if the element  that you are looking for is displayed with in the time that you have specified, then the webdriver will jump to the next statement, else it will wait for the max time still if the element is not exist, then it will throw an exception ,no such element found exception.
+
+
+Using implicit wait for every time is not a good practice.
+
+few elements will take 4 seconds too load, few elements will tke more than 20 seconds
+
+there might diff in loading of an object, so now i can not keep an ideal wait on my driver to identify.
+
+instead i need to keep wait on element.
+
+
+explicit wait will work purely on condition basis, the condition will be like the folowing
+
+1.element to be visibile
+2.element to be clickable
+3.texttobeprsent
+4.alerttobe present
