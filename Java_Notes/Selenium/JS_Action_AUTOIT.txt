@@ -1,0 +1,33 @@
+Actions class
+
+action class is used to perform special actions on the uielement such as like
+
+	* move to element which helps to perform mouse hover action
+	* double click
+	* drag and drop
+	* context click--- right click
+	* click and hold , used to select multiple options from the combo box.
+
+Action class has a constructor which demand to pass the webdriver refference.
+
+Syntax:
+
+Actions acc=new Actions(driver);
+
+acc.
+	movetoelement
+	clickandhold
+	contextclick
+	draganddrop
+
+
+Java ScriptExecutor:
+
+Js is used to stimulate an action on the elements from the DOM Structure
+Js can able to interact even the element is in hidden mode
+
+in Selenium JS is called as an interface
+
+synatx:
+JavaScriptExecutor js=(JavaScriptExecutor) driver;
+js.executeScript("argument[0].click();",WebElement)

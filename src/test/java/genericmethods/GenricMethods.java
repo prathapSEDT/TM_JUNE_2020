@@ -2,12 +2,14 @@ package genericmethods;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -120,6 +122,7 @@ public class GenricMethods {
 
 
     }
+
 public void waitForElementVisible(WebElement element, int seconds)
 {
     //get the xpath from the webElement
@@ -129,6 +132,20 @@ public void waitForElementVisible(WebElement element, int seconds)
     WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 }
+
+public void hoverAndClick(WebElement element){
+        Actions acc=new Actions(driver);
+        acc.moveToElement(element).click(element).build().perform();
+
+}
+
+public void forceclick(WebElement element)
+{
+    JavascriptExecutor js=(JavascriptExecutor) driver;
+    js.executeScript("arguments[0].click();",element);
+}
+
+
 
 
 }
