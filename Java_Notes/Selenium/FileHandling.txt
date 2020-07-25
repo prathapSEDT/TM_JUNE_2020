@@ -1,0 +1,82 @@
+File System:
+
+file system is used to handle folders and files available on the system.
+
+for handling the file system we use a class called "File" class
+
+this file class have overloaded constructor.
+
+
+user must need to pass the path of the folder , where he/she wish to perform an operatoration
+
+synatx:
+
+File file=new File("Folder Path")
+
+File file=new File("Folder Path","filename")
+
+this file object have differenet method available
+
+1.create a folder:
+
+file.mkdir()
+this method will create folder in the constructor given path
+
+2.create SubFolder()
+mkdirs()
+
+
+
+
+
+
+
+*****************************************************************************************
+
+Basically Data is categorized into two formats
+
+1.charcater data(.txt)
+2.Binary Data other than .txt
+
+TO write char data we have set of writters available
+
+1.FileWritter---- issue ----- can not print new line and can not print numerics
+2.BufferedWritter---- issue ----- can not print numerics
+3.PrintWritter--- no issues---
+
+
+file writter is depend on the fileclass object
+
+buffered writter is depend on the filewritter class object
+printwritter is deend on the filewritter class object.
+
+
+Reading a flatfile:
+
+FileReader-- give int value of each char and we need to conver it to char agin
+BufferedReader
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
