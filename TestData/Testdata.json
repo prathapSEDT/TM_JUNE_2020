@@ -1,0 +1,24 @@
+{
+
+  "TC_01": {
+
+    "FirstName": "Prathap",
+    "LastName": "Malepati",
+    "Company": "EPAM SYSTEM",
+    "Phone": "9626272284"
+
+  },
+  "TC_02": {
+
+    "FirstName": "Raj",
+    "LastName": "Krish",
+    "Company": "TCS",
+    "Phone": "9626272274"
+
+  }
+
+
+
+
+
+}
