@@ -1,0 +1,23 @@
+How to read a excel file?
+
+excel is the place holder where it stores the data in structured format 
+
+excel have a workbook.
+
+workbook contains worksheet
+
+worksheet contains rows and columns
+
+as the excel workbook extension is called as ".xlsx" we consider the data to be as binary data
+
+to readbinary data we have a reader available called as 
+
+FileInputStream
+
+to write a excel  we use an writter called as 
+
+FileOutPutStream
+
+java dont have direct access to deal with binary data.
+
+java looks for a help by using the plugin called as apachepoi.
