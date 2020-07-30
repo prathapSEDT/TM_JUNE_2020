@@ -1,0 +1,14 @@
+Handling Properties file:
+
+properties file is used to maintain the configuration level details of the application such as 
+
+application url
+application database detailsetc.
+
+here the properties file have an extension as ".properties"
+here in the properties file the data should be given in the key and value pairs
+remember that value should given without doube quotes.
+
+
+ex:
+USERNAME=PRATHAP

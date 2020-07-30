@@ -1,0 +1,27 @@
+problem statement:
+
+Raj have a class and he have some set of values say like setters and getters.
+
+problem is, every time he need to create an object for the class to access the items.
+
+he dont know wheter he had already craeted an object to the class or not, we all know that what will happen if every time an object is created.
+
+can you suggest a best way to make raj to create only one object one at a time? if possible let us know on what basis you are suggesting a solution?
+
+
+
+so to answer this question, we should know the concept of "Singleton class"
+
+make the user to create an object only once.
+
+Rules:
+=================
+1.make all the variables to be private
+2.make the constructor to be private
+3.create all the methods depends on your case as public
+4.out of all the method have a method which is helping us to check wheter an object is already created or not.
+
+
+
+
+
