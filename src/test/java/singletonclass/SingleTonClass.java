@@ -5,7 +5,7 @@ public class SingleTonClass {
     private String name;
     private String place;
 
-    private SingleTonClass singleTonClass;
+    private static SingleTonClass singleTonClass;
 
     private SingleTonClass() {
         System.out.println("Object is created");
@@ -35,9 +35,9 @@ public class SingleTonClass {
         this.place = place;
     }
 
-    public SingleTonClass getInstance(){
+    public static SingleTonClass getInstance(){
 
-        if (singleTonClass!=null)singleTonClass=new SingleTonClass();
+        if (singleTonClass==null)singleTonClass=new SingleTonClass();
 
         return singleTonClass;
 

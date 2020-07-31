@@ -20,6 +20,8 @@ import java.time.Duration;
 
 
 public class GenricMethods {
+
+
     public static WebDriver driver;
 
     /**
