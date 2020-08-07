@@ -1,0 +1,14 @@
+PageObject model
+
+it uses the design patten called page factory pattern
+
+the basic idea of creating a POM in selenium is, most of the time the application obeject properties might undergo changes
+
+as an user i want to update the element properties according to the usage.
+
+it leads to code maintaince and aswell as code reductions
+
+
+How to access the OR properties in a Application module page?
+
+ObjectRepostoryPage=PageFactory.intElement(driver,ObjectRepostoryPage.class);

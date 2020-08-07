@@ -1,0 +1,51 @@
+TestNG
+
+TestNg stands for testing for next genration.
+
+it is used to optimize the code 
+
+it is used as unit test framework both by the dev team and QA teams
+
+Genearlly there will be few scenarios available as what to do before testing, what to do while performing testing and what to do after testing
+
+ex: before my test suite starts test execution i need to coonect with my DB and i need to load testdata.
+
+TestNG has intelligence to perform the above listed operations.
+
+these operations can be invoked using annotions called testNG annotations
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@Test
+@Before Method
+@AfterMethod
+@Afterclass
+@AfterTest
+@AfterSuite
+
+@DataProvider
+@Parameters
+
+
+
+out of all these annotations, @Test is called as a testcase
+
+How to get start with TestNG?
+
+download the testNG jar file or add a maven dependency
+
+
+
+What is meant testsuite?
+
+testsuite is called as group of testcases.
+there will some operatons that need to be perform, before tsetexecution.
+
+* Loading properties file
+* Loading testdata
+* Connect with DB
+
+
+@Before Suite will helps to do these operation.
+this annotation will work once once

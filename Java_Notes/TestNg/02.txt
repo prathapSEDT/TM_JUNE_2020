@@ -1,0 +1,34 @@
+What are the parameters does @Test have?
+
+@Test is called as a testcase in testng
+
+this annotation have some set of attributes available
+
+* name== it is used t o define the name for a test case
+* description it is used describe what the test case is
+* dataprovider.. data proivider is used to load the testdata for the testcase.
+
+
+how to use datatprovider?
+
+dataprovider is available as separate annotation
+@DataProvider
+Rememeber that dataprovider will always return a object array by default.
+inside that dataprovider logic, user must write the logic of loading testdata from excel or json or through any source.
+
+once you mapped the dataprovider to the testcase, it automatically run the testcase with the ammount of testdata that you have given in the provider
+
+you no needto  write the logic of running multiple time.
+
+
+
+Assertions:
+Assertions are called as a checkpoints in the testexecution
+
+it helps teh user to validate expected value with the actual value
+
+these assertions are of two types
+	* hard assertion
+	* soft assertion
+hard assertions are the one which terminates the program abnormally
+softassertion are the one which catches the failure , but proceed further to execute the logic
